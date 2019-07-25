@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ravi-IT Solutions</title>
+  </head>
+  <body>
+    {% if results %}
+      {% for each_task in results %}
+          <p>{{each_task.title}}</p>
+          <p>Rs.{{each_task.description}}</p>
+      {% endfor %}
+    {% endif %}
+  </body>
+</html>
